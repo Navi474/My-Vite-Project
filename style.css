@@ -1,8 +1,12 @@
 *{
     margin: 0;
-    font-family: Inter, sans-serif;
+    font-family: Inter ExtraLight, sans-serif;
     text-decoration: none;
     color: #FFFFFF;
+}
+*::selection{
+    background-color: #e1a84a;
+    color: #2d2b0f;
 }
 a{
     margin: 55px 30px 70px;
@@ -46,15 +50,49 @@ a:hover{
     cursor: pointer;
 }
 .card{
-    width: 310px;
-    height: 225px;
+    transition: .3s;
+    display: flex;
     background-color: #272727;
 }
 .cards{
+    max-width: 1154px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 104px;
-    margin-top: 125px;
+    margin: 125px auto auto;
+}
+.text-desc{
+    display: flex;
+    flex-direction: column;
+}
+.text-desc h3{
+    margin-top: 50px;
+    margin-right: 12px;
+    font-weight: 200;
+    font-size: 24px;
+}
+.text-desc p{
+    margin-left: unset;
+    margin-top: 13px;
+    margin-right: 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.text-desc button{
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Inter, serif;
+    background: #c85312;
+    width: 79px;
+    height: 34px;
+    border: 0;
+    border-radius: 0;
+}
+.card:hover{
+    background-color: #EBAD51;
+}
+button:hover{
+    cursor: pointer;
 }
