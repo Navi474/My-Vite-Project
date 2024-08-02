@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -10,13 +10,14 @@
 <body>
 <script type="module" src="/main.js">
 </script>
-<div class="header">
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="first_word">About us</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Delivery</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Menu</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contacts</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reviews</a>
-
+<header class="header">
+    <nav class="navigation">
+        <a href="#" class="first_word">About us</a>
+        <a href="#">Delivery</a>
+        <a href="#">Menu</a>
+        <a href="#">Contacts</a>
+        <a href="#">Reviews</a>
+    </nav>
     <h1>TRADITIONAL <br>
         ARTISAX BAKERY</h1>
 
@@ -31,32 +32,103 @@
 
     <div class="cards">
         <div class="card">
-            <img src="img/cockie.png" alt="cockie">
+            <img src="images/cockie.png" alt="cockie">
             <div class="text-desc">
-                <h3>₪8.00(kg)</h3>
+                <h3>$8.00(kg)</h3>
                 <p>American Cockie</p>
                 <button>BUY</button>
             </div>
         </div>
         <div class="card">
-            <img src="img/crushed.png" alt="croisant">
+            <img src="images/crushed.png" alt="croisant">
             <div class="text-desc">
-                <h3>₪4.00(kg)</h3>
-                <p>Crushed with <br>
-                    chockolate</p>
+                <h3>$4.00(kg)</h3>
+                <p class="croissant">Crushed with <br> chockulate</p>
                 <button>BUY</button>
             </div>
         </div>
         <div class="card">
-            <img src="img/pie.png" alt="pie">
+            <img src="images/pie.png" alt="pie">
             <div class="text-desc">
-                <h3>₪4.00(kg)</h3>
+                <h3>$4.00(kg)</h3>
                 <p>Blackberry pie</p>
                 <button>BUY</button>
             </div>
         </div>
     </div>
 
-</div>
+</header>
+
+<main>
+    <section class="menu">
+        <div class="container">
+            <h3>MENU</h3>
+            <div class="all_cartochki">
+                <div class="order_card">
+                    <div class="content">
+                        <img src="images/breads_order.png" alt="bread for order">
+                        <p>Breads</p>
+                    </div>
+                    <button>Order</button>
+                </div>
+                <div class="order_card">
+                    <div class="content">
+                        <img src="images/bekary_order.png" alt="other випічка for order">
+                        <p>Bekary</p>
+                    </div>
+                    <button>Order</button>
+                </div>
+                <div class="order_card">
+                    <div class="content">
+                        <img src="images/cupcackes_order.png" alt="cupcackes for order">
+                        <p>Cakes & Capcakes</p>
+                    </div>
+                    <button>Order</button>
+                </div>
+                <div class="order_card">
+                    <div class="content">
+                        <img src="images/pretzels_order.png" alt="for order">
+                        <p>Coockies&Pretzels</p>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality">
+        <div class="container">
+            <article>
+                <img src="images/breads_order.png" alt="breads">
+                <ul>
+                    <li>1.Flour with fresh wheat</li>
+                    <li>2.New drozzhi</li>
+                    <li>3.Fresh eggs</li>
+                    <li>4.Watter from the well</li>
+                </ul>
+            </article>
+            <article>
+                <img src="images/coockies_quality.png" alt="breads">
+                <ul>
+                    <li>1.Flour with fresh wheat</li>
+                    <li>2.New drozzhi</li>
+                    <li>3.Fresh eggs</li>
+                    <li>4.Watter from the well</li>
+                </ul>
+            </article>
+            <article>
+                <img src="images/pie_quality.png" alt="breads">
+                <ul>
+                    <li>1.Flour with fresh wheat</li>
+                    <li>2.New drozzhi</li>
+                    <li>3.Fresh eggs</li>
+                    <li>4.Watter from the well</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+</main>
+
 </body>
 </html>

@@ -1,41 +1,57 @@
-*{
+* {
     margin: 0;
     font-family: Inter ExtraLight, sans-serif;
     text-decoration: none;
     color: #FFFFFF;
 }
-*::selection{
+
+*::selection {
     background-color: #e1a84a;
     color: #2d2b0f;
 }
-a{
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+}
+a {
     margin: 55px 30px 70px;
     font-size: 24px;
 }
-.first_word{
+
+.first_word {
     margin-left: 160px;
 }
-a:hover{
+
+a:hover {
     color: #9A9A9A;
 }
-.header{
-    background-image: url("img/background.png");
+
+.header {
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
     width: 100%;
-    height: 1040px;
+    height: 950px;
     padding-top: 55px;
 }
-.header h1{
+
+.header h1 {
     font-size: 70px;
     margin-left: 160px;
     margin-top: 70px;
 }
-.header p{
+
+.header p {
     font-size: 21px;
     max-width: 575px;
     margin: 25px 160px 35px;
 }
-.header button{
+
+.header button {
     width: 207px;
     height: 57px;
     background-color: #B47B48;
@@ -45,16 +61,19 @@ a:hover{
     border: 0;
     margin-left: 160px;
 }
-.header button:hover{
+
+.header button:hover {
     background-color: #6C4622;
     cursor: pointer;
 }
-.card{
+
+.card {
     transition: .3s;
     display: flex;
     background-color: #272727;
 }
-.cards{
+
+.cards {
     max-width: 1154px;
     display: flex;
     justify-content: space-between;
@@ -62,24 +81,28 @@ a:hover{
     flex-direction: row;
     margin: 125px auto auto;
 }
-.text-desc{
+
+.text-desc {
     display: flex;
     flex-direction: column;
 }
-.text-desc h3{
+
+.text-desc h3 {
     margin-top: 50px;
     margin-right: 12px;
     font-weight: 200;
     font-size: 24px;
 }
-.text-desc p{
+
+.text-desc p {
     margin-left: unset;
     margin-top: 13px;
     margin-right: 12px;
     font-weight: 500;
     font-size: 16px;
 }
-.text-desc button{
+
+.text-desc button {
     margin: 0 auto;
     font-weight: 900;
     font-size: 16px;
@@ -90,9 +113,126 @@ a:hover{
     border: 0;
     border-radius: 0;
 }
-.card:hover{
+
+.card:hover {
     background-color: #EBAD51;
 }
-button:hover{
+
+.croissant {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+button:hover {
     cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main h2 {
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 64px;
+}
+
+.order_card {
+    flex-wrap: wrap;
+    display: flex;
+    flex-basis: 326px;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+}
+.content p{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.main_down {
+    width: 100%;
+    background-image: url("images/quality_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.all_cartochki{
+    column-gap: 200px;
+    row-gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 856px;
+    margin: 0 auto;
+}
+.order_card button{
+    margin: 10px auto;
+    padding: 5px 30px;
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    background-color: #B47B48;
+    border-radius: 17px;
+    border: 1px solid #B47B48;
+    transition: .3s;
+}
+.menu .container{
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 21px;
+}
+.menu{
+    background: #202023;
+}
+.menu h3{
+    align-self: center;
+    font-size: 64px;
+    font-weight: 100;
+}
+.order_card button:hover{
+    background-color: transparent;
+}
+.quality .container{
+    min-height: 700px;
+    justify-content: space-between;
+}
+.quality article{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.quality ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(242, 242, 242, 0.3);
+    padding: 20px 13px 80px;
+}
+.quality li{
+    font-size: 24px;
+    font-weight: 400;
+}
+.quality{
+    background-image: url("images/quality_bg.png");
+    padding-top: 120px;
+}
+.quality article:nth-child(2){
+    align-self: center;
+}
+.quality article:nth-child(3){
+     align-self: end;
+}
+.quality article img{
+    transform: scale(1.2);
+}
+.quality article:nth-child(2) img{
+    transform: unset;
 }
